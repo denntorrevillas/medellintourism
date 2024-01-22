@@ -1,0 +1,186 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOURIST REST AREA</title>
+    <link rel="stylesheet" href="aisle.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="scroll-behavior: smooth">
+    <div class="top">
+      <div class="left">
+        <div class="image">
+          <img src="dot-lovetheph-logo copy.png" alt="" />
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="list">
+          <nav>
+            <a href="C:\MEDELLIN - Copy\home.html">HOME</a>
+            <a href="#foot">ABOUT US</a>
+            <a href="#head">DESTINATIONS</a>
+            <a href="#con">CONTACT</a>
+            <a href="booknow/booknow.html">BOOK NOW</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="center">
+        <div class="text">
+          <h1>TOURIST REST AREA</h1>
+          <p>Published by: Kimbery Conde</p>
+        </div>
+
+        <div class="images">
+          <p>
+            <b>LOOK: </b>The Department of Tourism (DOT) opened the Philippines’
+            first Tourist Rest Area (TRA) in the Northwestern town of Medellin
+            in Cebu last July 10, 2023. Located in Barangay Poblacion, the TRA
+            spans 300 meters and is adorned with Filipino aesthetics and
+            architecture.
+          </p>
+          <img src="tou1.png" alt="" />
+          <p>
+            It serves as a pitstop for travelers, with useful amenities
+            including a cafe, a souvenir shop, charging stations, desks and
+            restrooms.
+          </p>
+          <img src="tou2.png" alt="" />
+          <img src="tou3.png" alt="" />
+          <p>
+            This will also serve as an information booth for tourists to share
+            their concerns or access different travel information free of
+            charge.
+          </p>
+          <img src="tou5.jpg" alt="" />
+        </div>
+        <hr>
+
+        <div class="comment">
+          <h1>Recent Reviews</h1>
+          <br />
+          <div class="comms">
+            <h4>Gretchen Sunit</h4>
+            <p>
+              nice ambiance.
+            </p>
+          </div>
+          <br />
+
+          <div class="comms">
+            <h4>Denn Carlisle Torrevillas</h4>
+            <p>
+              relaxing place.
+            </p>
+          </div>
+          <br />
+
+          <div class="comms">
+            <h4>Kimberly Conde</h4>
+            <p>
+              relaxing and nice view.
+            </p>
+            <br />
+          </div>
+          <br />
+          <div class="newcom">
+            <h4 id="heading">New review will appear here..</h4>
+            <p id="paragraph"></p>
+          </div> 
+          <br>
+          <div class="add"> <hr>
+            <h3>  Submit a Review here</h3>
+            <label for="">Name: 
+              <input type="text" id="nname" placeholder="Enter your name here"> <br>
+            </label>
+            <textarea placeholder="Write your review here..." name="" id="rreview" cols="30" rows="10" ></textarea>
+           <div class="button">
+            <button onclick="change()">CHANGE</button>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .comms p,
+      .newcom p {
+        font-size: 12px;
+      }
+      .comms,
+      .newcom {
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+      .add textarea {
+        margin-top: 20px;
+        height: 100px;
+        padding-left: 10px;
+        padding-top: 10px;
+        width: 100%;
+        border-color: gray;
+        border-style: solid;
+        border-width: 0.5px;
+        border-radius: 10px;
+      }
+      .add input {
+        border-style: solid;
+        border-width: 0.2px;
+        border-color: gray;
+        height: 27px;
+        border-radius: 4px;
+        width: 300px;
+        padding-left: 10px;
+      }
+      .button button {
+        height: 30px;
+        width: 120px;
+        border-style: solid;
+        border-width: 0.6px;
+        border-color: #1c1c1c;
+        margin-top: 20px;
+        background-color: #1c1c1c;
+        color: #f1f1f1;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+      .button button:hover {
+        background-color: transparent;
+        color: #1c1c1c;
+      }
+      .button {
+        display: flex;
+        justify-content: flex-end;
+      }
+      @media screen and (max-width: 650px) {
+        .comment,
+        .button {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+    </style>
+
+
+<script>
+      function change(){
+
+          let newname=document.getElementById("nname").value;
+          let newrewiew=document.getElementById("rreview").value;
+
+          document.getElementById("heading").innerText=newname;
+          document.getElementById("paragraph").innerText=newrewiew;
+      }
+    </script>
+  </body>
+</html>

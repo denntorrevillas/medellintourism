@@ -1,0 +1,192 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PARADIZO BEACH RESORT</title>
+    <link rel="stylesheet" href="aisle.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="top">
+      <div class="left">
+        <div class="image">
+          <img src="dot-lovetheph-logo copy.png" alt="" />
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="list">
+          <nav>
+            <a href="C:\MEDELLIN - Copy\home.html">HOME</a>
+            <a href="#foot">ABOUT US</a>
+            <a href="#head">DESTINATIONS</a>
+            <a href="#con">CONTACT</a>
+            <a href="booknow/booknow.html">BOOK NOW</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="center">
+        <div class="text">
+          <h1>PARADIZO BEACH RESORT</h1>
+        </div>
+
+        <div class="images">
+          <p>
+            <b>LOOK: </b>"Paradizzo Beach Resort" in Brgy. Kawit, Medellin, Cebu
+            has been the go-to destination for family gatherings and friendly
+            outings. Everyone loves white sand beaches and this place just got
+            those for you so you can scamper around and pretend like you’re a
+            kid again. The clear azure waters will make you fall in love with
+            the seas.
+          </p>
+          <img src="intro.jpg" alt="" />
+          <img src="intro1.jpg" alt="" />
+          <p>
+            The resort also offers kayak, jet skis, banana boats, and paddle
+            boards for rent so you may sail further away from the shorelines if
+            you're up for some excitement.
+          </p>
+          <img src="jetski.jpg" alt="" />
+          <img src="kayak.jpg" alt="" />
+          <p>
+            Additionally, if you enjoy watching sunsets, the Paradizzo resort
+            provides an excellent vantage position. In addition, you can camp
+            there and stay in accommodations..
+          </p>
+          <img src="sunset.jpg" alt="" />
+          <img src="paracamp.jpg" alt="" />
+        </div>
+        <hr>
+
+        <div class="comment">
+          <h1>Recent Reviews</h1>
+          <br />
+          <div class="comms">
+            <h4>Gretchen Sunit</h4>
+            <p>
+              The place was awesome. Grabe ka ma abi-abihon ang mga staffs.
+
+              Nindot balik-balikan. if you're looking for a good spot to spend your weekend or holiday somewhere 
+              sa north area of CEbu, I recommend Paradizzo Beach Resort.
+            </p>
+          </div>
+          <br />
+
+          <div class="comms">
+            <h4>Denn Carlisle Torrevillas</h4>
+            <p>
+              A place where you can find peace again, sunod na pud Paradizzo Beach Resort
+            </p>
+          </div>
+          <br />
+
+          <div class="comms">
+            <h4>Kimberly Conde</h4>
+            <p>
+              Nice ni sya nga place like you can bond with your friends or family. And nindot pud e watch og sunset diri.
+              I really love this place, highly recommend.
+            </p>
+            <br />
+          </div>
+          <br />
+          <div class="newcom">
+            <h4 id="heading">New review will appear here..</h4>
+            <p id="paragraph"></p>
+          </div> 
+          <br>
+          <div class="add"> <hr>
+            <h3>  Submit a Review here</h3>
+            <label for="">Name: 
+              <input type="text" id="nname" placeholder="Enter your name here"> <br>
+            </label>
+            <textarea placeholder="Write your review here..." name="" id="rreview" cols="30" rows="10" ></textarea>
+           <div class="button">
+            <button onclick="change()">CHANGE</button>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .comms p,
+      .newcom p {
+        font-size: 12px;
+      }
+      .comms,
+      .newcom {
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+      .add textarea {
+        margin-top: 20px;
+        height: 100px;
+        padding-left: 10px;
+        padding-top: 10px;
+        width: 100%;
+        border-color: gray;
+        border-style: solid;
+        border-width: 0.5px;
+        border-radius: 10px;
+      }
+      .add input {
+        border-style: solid;
+        border-width: 0.2px;
+        border-color: gray;
+        height: 27px;
+        border-radius: 4px;
+        width: 300px;
+        padding-left: 10px;
+      }
+      .button button {
+        height: 30px;
+        width: 120px;
+        border-style: solid;
+        border-width: 0.6px;
+        border-color: #1c1c1c;
+        margin-top: 20px;
+        background-color: #1c1c1c;
+        color: #f1f1f1;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+      .button button:hover {
+        background-color: transparent;
+        color: #1c1c1c;
+      }
+      .button {
+        display: flex;
+        justify-content: flex-end;
+      }
+      @media screen and (max-width: 650px) {
+        .comment,
+        .button {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+    </style>
+
+
+<script>
+      function change(){
+
+          let newname=document.getElementById("nname").value;
+          let newrewiew=document.getElementById("rreview").value;
+
+          document.getElementById("heading").innerText=newname;
+          document.getElementById("paragraph").innerText=newrewiew;
+      }
+    </script>
+  </body>
+</html>

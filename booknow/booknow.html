@@ -1,0 +1,183 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="booknow.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="scroll-behavior: smooth">
+    <div class="box">
+      <div class="center">
+      <div class="inputs">
+        <h1>Booking Form</h1>
+        
+        <div class="txt"> 
+
+          <div class="first">
+            <div class="left">
+              <label for="">Fullname <br>
+                <input type="text" name="" id="fn" placeholder="Enter your Fullname" required>
+              </label> <br>
+            </div>
+  
+           <div class="right">
+            <label for="">Destination: <br>
+              <select name="" id="des">
+                <option value="Sadagat Beach Camp">Sadagat Beach Camp</option>
+                <option value="Bantayan Beach Resor">Bantayan Beach Resort</option>
+                <option value="Matahum Paradise Villa">Matahum Paradise Villa</option>
+                <option value="Paradizo Beach Resort">Paradizo Beach Resort</option>
+                <option value="Leci Beach House">Leci Beach House</option>
+              </select>
+            </label>
+           </div>
+          </div>
+
+          <div class="contact">
+
+            <div class="left">
+              <label for="">Email Address <br>
+                <input type="email" name="" id="email" placeholder="Enter your Email Address">
+              </label> <br>
+            </div>
+            
+            <div class="right">
+              
+            <label for="">Phone Number <br>
+              <input type="text" name="" id="pn" placeholder="Enter your Phone Number">
+            </label> <br>
+            </div>
+          </div>
+
+          <div class="date">
+           <div class="left">
+            <label for="">Check-in Date <br>
+              <input type="date" name="" id="checkin">
+            </label> <br>
+           </div>
+  
+            <div class="right">
+              <label for="">Check-out Date <br>
+                <input type="date" name="" id="checkout">
+              </label> <br>
+            </div>
+          </div>
+
+          <div class="person"> <br>
+            <label for="">Number of Person:
+              <div class="people">
+                <div class="left">
+                  <label for="">Adult: <br>
+                    <input type="number" name="" id="adult" placeholder="Number of Adult">
+                  </label> <br>
+                </div>
+               <div class="right">
+                <label for="">Child/Children <br>
+                  <input type="number" name="" id="child" placeholder="Number of Children">
+                </label> <br>
+               </div>
+
+                
+              </div>
+            </label>
+          </div>
+
+          <div class="downpayment"> 
+            <div class="left">
+              <label for="">Mode of Payment <br>
+                <select name="" id="mop">
+                  <option value="Bank Transfer">Bank Transfer</option>
+                  <option value="Gcash">Ccash</option>
+                  <option value="Paymaya/Maya">Paymaya/Maya</option>
+                  <option value="Others">Others</option>
+                </select>
+              </label>
+            </div>
+           
+              <div class="right">
+                <label for="">Reference Number <br>
+                  <input type="text" name="" id="rn" placeholder="Reference number">
+                </label> <br>
+              </div>
+
+                         
+          </div>
+
+          <div class="last">
+            <div class="left">
+              <label for="">Voucher <br>
+                <input type="text" name="" id="voucher" placeholder="Enter voucher code, if any">
+              </label> <br>
+            </div>
+
+           <div class="right">
+            <label for=""> Proof of Payment <br>
+              <input type="file" name="" id="pop">
+            </label> 
+           </div> 
+          </div>
+           
+          <br>
+          <div class="bottom">
+            <div class="btn">
+              <button onclick="popup()">SUBMIT</button>
+            </div>
+           
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+
+
+    <script>
+
+alert("DISCOUNT USING VOUCHERS AUTOMATICALLY DEDUCTED UPON FULL PAYMENT");
+
+        function popup(){
+          var form={
+            fn:document.getElementById("fn").value,
+            des:document.getElementById("des").value,
+            email:document.getElementById("email").value,
+            pn:document.getElementById("pn").value,
+            checkin:document.getElementById("checkin").value,
+            checkout:document.getElementById("checkout").value,
+            adult:document.getElementById("adult").value,
+            child:document.getElementById("child").value,
+            mop:document.getElementById("mop").value,
+            rn:document.getElementById("rn").value,
+            voucher:document.getElementById("voucher").value,
+            pop:document.getElementById("pop").value,
+
+          };
+
+
+          alert('BOOKED SUCCESSFUL\n'
+          +"\nFULLNAME: "+form.fn
+          +"\nDESTINATION: "+form.des
+          +"\nEMAIL ADDRESS: "+form.email
+          +"\nPHONE NUMBER: "+form.pn
+          +"\nCHECK-IN DATE: "+form.checkin
+          +"\nCHECK-OUT DATE: "+form.checkout
+          +"\nADULT: "+form.adult
+          +"\nCHILD: "+form.child
+          +"\nMODE OF PAYMENT: "+form.mop
+          +"\nREFERENCE NUMBER: "+form.rn
+          +"\nVOUCHER: "+form.voucher
+          +"\nPROOF OF PAYMENT: "+form.pop
+          );
+
+          alert('THANK YOU!');
+        }
+    </script>
+
+ 
+  </body>
+</html>

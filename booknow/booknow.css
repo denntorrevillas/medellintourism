@@ -1,0 +1,102 @@
+body{
+    background-image: url(por.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+*{
+    font-family: Poppins;
+    /* border: solid;
+    border-color: #f1f1f1; */
+}
+
+.inputs{
+    border-radius: 15px;
+    padding: 10px 40px 10px 40px;
+    background-color: #1c1c1c;
+}
+.inputs input,select{
+    border-radius: 6px;
+    border: none;
+    padding-left: 8px;
+    margin-bottom: 8px;
+    height: 30px;
+    
+    width: 220px;
+}
+.center label{
+    color: #f1f1f1;
+}
+.center h1{
+    color: #f1f1f1;
+}
+.first, .contact , .date, .people, .downpayment, .last{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.txt p{
+    color: #f1f1f1;
+    font-size: px;
+    text-align: center;
+}
+.btn button{
+    width: 220px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn button:hover{
+    background-color: #1c1c1c;
+    border-style: solid;
+    border-width: 0.8px;
+    border-color: #f1f1f1;
+    color: #f1f1f1;
+}
+@media screen and (max-width:650px) {
+
+    .first, .contact , .date, .people, .downpayment, .last{
+        display: block;
+        justify-content: center;
+        gap: 25px;
+    }
+    .inputs input,select{
+        border-radius: 6px;
+        border: none;
+        padding-left: 8px;
+        margin-bottom: 8px;
+        height: 30px;
+        
+        width: 320px;
+    }
+    .people{
+        display: flex;
+        justify-content: flex-start;
+
+    }
+    .people input{
+        
+        width: 140px;
+    }
+    .inputs{
+        border-radius: 10px;
+        padding: 10px 10px 40px 10px;
+        background-color: #1c1c1c;
+    }
+    .inputs label{
+        font-size: 14px;
+    }
+    
+}

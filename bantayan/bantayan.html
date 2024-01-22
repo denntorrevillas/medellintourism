@@ -1,0 +1,203 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BANTAYAN BEACH</title>
+    <link rel="stylesheet" href="aisle.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="scroll-behavior: smooth">
+    <div class="top">
+      <div class="left">
+        <div class="image">
+          <img src="dot-lovetheph-logo copy.png" alt="" />
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="list">
+          <nav>
+            <a href="C:\MEDELLIN - Copy\home.html">HOME</a>
+            <a href="#foot">ABOUT US</a>
+            <a href="#head">DESTINATIONS</a>
+            <a href="#con">CONTACT</a>
+            <a href="booknow/booknow.html">BOOK NOW</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="center">
+        <div class="text">
+          <h1>BANTAYAN BEACH</h1>
+          <p>Published by: Kimbery Conde</p>
+        </div>
+
+        <div class="images">
+          <p>
+            <b>LOOK: </b>Bantayan Beach in Medellin (formerly known as
+            <i>Hideaway Beach</i>) may not be as famous as the renowned Bantayan
+            Island in the northwestern part of the province, but it surely
+            doesn’t fall short of the unique experience that it has to offer.
+            <br />
+            <br />
+            The place is a public beach resort that flaunts a refreshing treat
+            for everyone who’s on tight budget. For a 15-pesos entrance fee, you
+            and your family can already have a splashing and memorable day
+            swimming through the depths of the sea and basking under the heat of
+            the sun.
+          </p>
+          <img src="ban1.jpg" alt="" />
+          <p>
+            The place offers numerous cottages where guests can rent while they
+            are at the resort. The colorful cottages are ideal for a feast of
+            delectable meals. You can enjoy all the food that you want at no
+            additional costs.
+          </p>
+          <img src="ban2.jpg" alt="" />
+          <img src="ban4.jpg" alt="" />
+
+          <p>
+            <b>LONG BOARDWALK</b> <br />
+            One thing that makes this beach resort unique and photogenic is the
+            long boardwalk connecting the mainland to a rocky islet close to the
+            coast. The bridge is around 500 meters long and is illuminated at
+            night making the place even more appealing to visitors.
+          </p>
+          <img src="ban3.jpg" alt="" />
+          <img src="ban5.jpg" alt="" />
+          <img src="ban6.jpg" alt="" />
+          <p>
+            Aside from swimming, guests at the beach can also go snorkeling and
+            kayaking or they can opt to rent a jet ski to cap the day.
+          </p>
+          <img src="ban7.jpg" alt="" />
+        </div>
+        <hr>
+
+        <div class="comment">
+          <h1>Recent Reviews</h1>
+          <br />
+          <div class="comms">
+            <h4>Gretchen Sunit</h4>
+            <p>
+              Highly recommend also for those nga ganahan ma relax. Unya nice pud sya adto inig hapon tungod sa sunset.
+            </p>
+          </div>
+          <br />
+
+          <div class="comms">
+            <h4>Denn Carlisle Torrevillas</h4>
+            <p>
+              Great location, unya highly recommend labaw na sa mga magbarkada.
+            </p>
+          </div>
+          <br />
+
+          <div class="comms">
+            <h4>Kimberly Conde</h4>
+            <p>
+              nice view sya labaw na inig hapon since I like sunset.
+            </p>
+            <br />
+          </div>
+          <br />
+          <div class="newcom">
+            <h4 id="heading">New review will appear here..</h4>
+            <p id="paragraph"></p>
+          </div> 
+          <br>
+          <div class="add"> <hr>
+            <h3>  Submit a Review here</h3>
+            <label for="">Name: 
+              <input type="text" id="nname" placeholder="Enter your name here"> <br>
+            </label>
+            <textarea placeholder="Write your review here..." name="" id="rreview" cols="30" rows="10" ></textarea>
+           <div class="button">
+            <button onclick="change()">CHANGE</button>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .comms p,
+      .newcom p {
+        font-size: 12px;
+      }
+      .comms,
+      .newcom {
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+      .add textarea {
+        margin-top: 20px;
+        height: 100px;
+        padding-left: 10px;
+        padding-top: 10px;
+        width: 100%;
+        border-color: gray;
+        border-style: solid;
+        border-width: 0.5px;
+        border-radius: 10px;
+      }
+      .add input {
+        border-style: solid;
+        border-width: 0.2px;
+        border-color: gray;
+        height: 27px;
+        border-radius: 4px;
+        width: 300px;
+        padding-left: 10px;
+      }
+      .button button {
+        height: 30px;
+        width: 120px;
+        border-style: solid;
+        border-width: 0.6px;
+        border-color: #1c1c1c;
+        margin-top: 20px;
+        background-color: #1c1c1c;
+        color: #f1f1f1;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+      .button button:hover {
+        background-color: transparent;
+        color: #1c1c1c;
+      }
+      .button {
+        display: flex;
+        justify-content: flex-end;
+      }
+      @media screen and (max-width: 650px) {
+        .comment,
+        .button {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+    </style>
+
+
+<script>
+      function change(){
+
+          let newname=document.getElementById("nname").value;
+          let newrewiew=document.getElementById("rreview").value;
+
+          document.getElementById("heading").innerText=newname;
+          document.getElementById("paragraph").innerText=newrewiew;
+      }
+    </script>
+  </body>
+</html>
